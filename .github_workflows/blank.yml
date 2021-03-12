@@ -1,0 +1,17 @@
+name: Greeting from Wang Yuxiao
+on: push
+
+jobs:
+        my job:
+                name: My Job
+                runs-on: ubuntu lastest
+                steps:
+                - name: Print a greeting
+                   env:
+                        MY_VAR: Hi there! My name is
+                        FIRST_NAME: Yuxiao
+                        MIDDLE_NAME:
+                        LAST_NAME: WANG
+                     run: |
+                        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.    
+
